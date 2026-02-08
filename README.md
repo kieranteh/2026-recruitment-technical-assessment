@@ -32,9 +32,7 @@ If you are applying for **Warchest**:
  - If you are applying for **Money Module** you need to complete the [backend](./backend/README.md) task. 
 
 ### Platforms
-You will only have to complete the [platforms](./platforms/) tasks.
-
-
+If you are applying for **Platforms**, you will only need to complete one of the two [platforms](./platforms/) tasks.
 
 ---
 
@@ -46,5 +44,6 @@ You will only have to complete the [platforms](./platforms/) tasks.
 If you have any questions, feel free to direct questions to:
 
 - [#questions](https://discord.com/channels/1178178680388857867/1199551322219884634) forum in the [DevSoc Discord](https://discord.gg/6fnHcuFFtz).
+*Ask in [#platform-technical-assessment](https://discord.com/channels/1178178680388857867/1199573268697464912) for platforms specific questions.
 - Any execs on the Discord.
 - `exec@devsoc.app` via email.

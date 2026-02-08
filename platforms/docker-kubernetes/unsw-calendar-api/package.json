@@ -1,0 +1,51 @@
+{
+  "name": "calendar",
+  "version": "1.0.0",
+  "description": "A simple API to fetch key UNSW academic calendar dates",
+  "scripts": {
+    "prepare": "node -e \"if (process.env.npm_config_production==='true') process.exit(0); require('child_process').spawnSync(process.platform==='win32'?'pnpm.cmd':'pnpm',['exec','husky'],{stdio:'inherit'})\"",
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "format": "prettier --write src/**/*.ts",
+    "format:check": "prettier --check src/**/*.ts"
+  },
+  "lint-staged": {
+    "src/**/*.ts": [
+      "eslint",
+      "prettier --check"
+    ]
+  },
+  "author": "lhvy",
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": {
+    "node": ">=24.10.0 <25",
+    "pnpm": ">=10.20.0"
+  },
+  "packageManager": "pnpm@10.20.0+sha512.cf9998222162dd85864d0a8102e7892e7ba4ceadebbf5a31f9c2fce48dfce317a9c53b9f6464d1ef9042cba2e02ae02a9f7c143a2b438cd93c91840f0192b9dd",
+  "dependencies": {
+    "@fastify/helmet": "13.0.2",
+    "@fastify/rate-limit": "10.3.0",
+    "cheerio": "1.1.2",
+    "date-fns": "4.1.0",
+    "fastify": "5.6.1",
+    "zod": "4.1.12"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.1",
+    "@types/node": "24.10.0",
+    "eslint": "9.39.1",
+    "eslint-config-prettier": "10.1.8",
+    "globals": "16.5.0",
+    "husky": "9.1.7",
+    "jiti": "2.6.1",
+    "lint-staged": "16.2.6",
+    "prettier": "3.6.2",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.46.3"
+  }
+}
